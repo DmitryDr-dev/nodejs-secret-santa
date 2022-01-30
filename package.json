@@ -1,0 +1,45 @@
+{
+  "name": "nodejs-secret-santa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+   "type": "module",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node -r dotenv/config --es-module-specifier-resolution=node ./bin/server.js",
+    "start:dev": "cross-env NODE_ENV=development  nodemon -r dotenv/config --es-module-specifier-resolution=node ./bin/server.js",
+    "lint": "eslint **/*.js",
+    "lint:fix": "eslint --fix **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitryDr-dev/nodejs-secret-santa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DmitryDr-dev/nodejs-secret-santa/issues"
+  },
+  "homepage": "https://github.com/DmitryDr-dev/nodejs-secret-santa#readme",
+  "dependencies": {
+    "cors": "2.8.5",
+    "cross-env": "7.0.3",
+    "dotenv": "^14.3.2",
+    "express": "4.17.1",
+    "morgan": "1.10.0",
+    "sequelize": "^6.15.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/preset-env": "^7.16.11",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "5.2.0",
+    "nodemon": "2.0.15"
+  }
+}
